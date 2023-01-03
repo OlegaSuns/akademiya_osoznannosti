@@ -5,7 +5,7 @@ void main() => runApp(MaterialApp(
     primaryColor: Colors.deepOrangeAccent,
 
   ),
-  home: Home(),
+  home: const Text('Hello'),
 ));
 
 
