@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "800319571693",
+    "project_id": "aoflutter",
+    "storage_bucket": "aoflutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800319571693:android:b66f2626439455fcf32ee4",
+        "android_client_info": {
+          "package_name": "com.example.akademiya_osoznannosti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800319571693-mal5si2qncmaq8ie1h5vi20voct3rkp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO2g8qJySu6q2wYUisW-n2hEvHnxQv4Dc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800319571693-mal5si2qncmaq8ie1h5vi20voct3rkp8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
