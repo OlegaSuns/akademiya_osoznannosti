@@ -49,6 +49,12 @@ class _CoursesState extends State<Courses> {
               print(index);
               FirebaseFirestore.instance.collection('items').add({'item': index});
 
+              FirebaseFirestore.instance.collection("items").get().then((QuerySnapshot querySnapshot) {
+                print(querySnapshot.docs.length);
+
+
+              });
+
             },
             child: Card(
               child: ListTile(title: Text(courses[index])),

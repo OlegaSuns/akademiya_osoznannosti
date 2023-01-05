@@ -19,9 +19,9 @@ class _InsitutesState extends State<Insitutes> {
 
     print('Init FireBase compleate in Cource Window');
 
-    FirebaseFirestore.instance.collection("items").get().then((QuerySnapshot querySnapshot) {
-      print(querySnapshot.docs.length);
-    });
+    // FirebaseFirestore.instance.collection("items").get().then((QuerySnapshot querySnapshot) {
+    //   print(querySnapshot.docs.length);
+    // });
 
 
   }
@@ -48,8 +48,7 @@ class _InsitutesState extends State<Insitutes> {
         stream: FirebaseFirestore.instance.collection('items').snapshots(),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot){
 
-          FirebaseFirestore.instance.collection("items")
-    }.get().then((QuerySnapshot querySnapshot) {
+    //   FirebaseFirestore.instance.collection("items").get().then((QuerySnapshot querySnapshot)
 
 
 
@@ -57,10 +56,10 @@ class _InsitutesState extends State<Insitutes> {
           if(!snapshot.hasData) return Text('Нет записей');
           return ListView.builder(
 
-              //itemCount: 4 ,
+              itemCount: 4 ,
 
 
-              itemCount: querySnapshot.docs.length ,
+            //  itemCount: querySnapshot.docs.length ,
               itemBuilder: (BuildContext, int index) {
                 return InkWell(
 
